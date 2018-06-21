@@ -1,4 +1,6 @@
-.cross {
-  text-decoration: line-through;
-  color: greenyellow;
+li{
+  display: inline-block;
+  width: 300px;
+  text-overflow: inherit;
+  word-wrap: break-word;
 }
