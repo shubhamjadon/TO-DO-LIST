@@ -23,7 +23,6 @@ function addEvents() {
   let tasks = document.querySelectorAll("i");
   tasks.forEach(task => {
     task.addEventListener("click", function() {
-        console.log(this.classList);
         let index = this.classList;
         data.splice(index[0],1);
         makeList();
