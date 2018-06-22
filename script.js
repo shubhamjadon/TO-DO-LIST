@@ -15,12 +15,12 @@ btnAdd.addEventListener('click', () => {
 function makeList() {
   list.innerHTML = "";
   for(let i=0; i<data.length; i++) {
-    list.innerHTML += "<li><h3>" + data[i] + "</h3></li>" + "<button class ='"+i+" btn btn-danger'><i class='far fa-trash-alt'></i></button><br>";
+    list.innerHTML += "<li><span><i class='" + i + " far fa-trash-alt'></i></span>" + data[i] +"</li>";
   }
 }
 
 function addEvents() {
-  let tasks = document.querySelectorAll(".btn");
+  let tasks = document.querySelectorAll("i");
   tasks.forEach(task => {
     task.addEventListener("click", function() {
         console.log(this.classList);
